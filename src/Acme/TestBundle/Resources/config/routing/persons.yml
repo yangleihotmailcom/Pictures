@@ -1,0 +1,30 @@
+persons:
+    pattern:  /
+    defaults: { _controller: "AcmeTestBundle:Persons:index" }
+
+persons_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "AcmeTestBundle:Persons:show" }
+
+persons_new:
+    pattern:  /new
+    defaults: { _controller: "AcmeTestBundle:Persons:new" }
+
+persons_create:
+    pattern:  /create
+    defaults: { _controller: "AcmeTestBundle:Persons:create" }
+    requirements: { _method: post }
+
+persons_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "AcmeTestBundle:Persons:edit" }
+
+persons_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "AcmeTestBundle:Persons:update" }
+    requirements: { _method: post }
+
+persons_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "AcmeTestBundle:Persons:delete" }
+    requirements: { _method: post }

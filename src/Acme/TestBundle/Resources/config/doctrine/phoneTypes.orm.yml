@@ -1,0 +1,14 @@
+Acme\TestBundle\Entity\phoneTypes:
+  type: entity
+  repositoryClass:  Acme\TestBundle\Repository\phoneTypesRepository
+  table: null
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    typeName:
+      type: string
+      length: 255
+  lifecycleCallbacks: {  }

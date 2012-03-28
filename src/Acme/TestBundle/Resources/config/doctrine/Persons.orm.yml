@@ -1,0 +1,25 @@
+Acme\TestBundle\Entity\Persons:
+  type: entity
+  table: persons
+  manyToOne:
+    phoneType:
+      targetEntity: phoneTypes
+      joinColumn:
+        name: phoneType_id
+        referencedColumnName: id
+  fields:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+    firstName:
+      type: string
+      length: 255
+    lastName:
+      type: string
+      length: 255
+    phoneNum:
+      type: string
+      length: 255
+  lifecycleCallbacks: {  }

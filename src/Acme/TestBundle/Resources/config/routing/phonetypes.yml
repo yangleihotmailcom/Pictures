@@ -1,0 +1,30 @@
+phonetypes:
+    pattern:  /
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:index" }
+
+phonetypes_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:show" }
+
+phonetypes_new:
+    pattern:  /new
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:new" }
+
+phonetypes_create:
+    pattern:  /create
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:create" }
+    requirements: { _method: post }
+
+phonetypes_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:edit" }
+
+phonetypes_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:update" }
+    requirements: { _method: post }
+
+phonetypes_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "AcmeTestBundle:phoneTypes:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,16 @@
+AcmeTestBundle:
+    resource: "@AcmeTestBundle/Resources/config/routing.yml"
+    prefix:   /
+
+AcmeTestBundlePhoneTypes:
+    resource: "@AcmeTestBundle/Resources/config/routing/phonetypes.yml"
+    prefix:   /phonetypes
+
+AcmeTestBundlePersons:
+    resource: "@AcmeTestBundle/Resources/config/routing/persons.yml"
+    prefix:   /persons
+    
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal

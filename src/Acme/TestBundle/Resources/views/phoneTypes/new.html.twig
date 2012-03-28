@@ -1,0 +1,16 @@
+<h1>phoneTypes creation</h1>
+
+<form action="{{ path('phonetypes_create') }}" method="post" {{ form_enctype(form) }} novalidate="novalidate">
+    {{ form_widget(form) }}
+    <p>
+        <button type="submit">Create</button>
+    </p>
+</form>
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('phonetypes') }}">
+            Back to the list
+        </a>
+    </li>
+</ul>
