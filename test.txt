@@ -1,2 +1,5 @@
 Just a test file
 This is a master file
+Add new line into file for branch
+commit again.
+This is a master file
